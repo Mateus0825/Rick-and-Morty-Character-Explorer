@@ -7,7 +7,7 @@ export default function CharacterCard({ item, onPress }) {
 
       <View>
         <Text style={styles.name}>{item.name}</Text>
-        <Text>
+        <Text style={styles.sub}>
           {item.status} - {item.species}
         </Text>
       </View>
@@ -18,18 +18,25 @@ export default function CharacterCard({ item, onPress }) {
 const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
-    padding: 10,
+    padding: 12,
     marginVertical: 8,
-    backgroundColor: "#eee",
-    borderRadius: 10,
+    backgroundColor: "#132b3e",
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#2cf5b5",
   },
   image: {
     width: 70,
     height: 70,
-    borderRadius: 6,
+    borderRadius: 8,
+    marginRight: 12,
   },
   name: {
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: 17,
+    color: "#97ce4c",
+  },
+  sub: {
+    color: "#e5ffe0",
   },
 });
