@@ -36,7 +36,6 @@ export default function CharacterDetailScreen({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      {/* Botão de voltar */}
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
         <Ionicons name="arrow-back" size={26} color="#97ce4c" />
         <Text style={styles.backText}>Voltar</Text>
@@ -88,12 +87,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 
-  /** ← botão voltar */
   backButton: {
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    paddingTop: 40,
+    paddingTop: 38,
     paddingBottom: 10,
   },
   backText: {
@@ -137,13 +135,13 @@ const styles = StyleSheet.create({
 
   label: {
     fontSize: 14,
-    color: "#7dbb48",
+    color: "#97ce4c",
     fontWeight: "bold",
     marginBottom: 3,
   },
 
   value: {
     fontSize: 16,
-    color: "#e4ffcc",
+    color: "#e5ffe0",
   },
 });

@@ -7,7 +7,7 @@ export default function SearchBar({ value, onChangeText, onSearch, onClear }) {
       <TextInput
         style={styles.input}
         placeholder="Buscar personagem..."
-        placeholderTextColor="#7bbf32"
+        placeholderTextColor="#9be96a"
         value={value}
         onChangeText={onChangeText}
       />
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     gap: 10,
     marginBottom: 18,
     alignItems: "center",
-    marginTop: 40,  
+    marginTop: 40,
   },
   input: {
     flex: 1,
@@ -44,7 +44,13 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#97ce4c",
-    borderRadius: 12,
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 18,
+  },
+  buttonClear: {
+    backgroundColor: "#cc4c4c",
+    borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 18,
   },
@@ -52,11 +58,5 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "bold",
     color: "#0b1e2d",
-  },
-   buttonClear: {
-    backgroundColor: "#ce4c4cff",
-    borderRadius: 12,
-    paddingVertical: 10,
-    paddingHorizontal: 18,
   },
 });

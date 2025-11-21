@@ -86,6 +86,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 12,
     marginBottom: 12,
+    borderWidth: 1,
+    borderColor: "#2cf5b5",
   },
   avatar: {
     width: 75,
@@ -99,6 +101,6 @@ const styles = StyleSheet.create({
     color: "#97ce4c",
   },
   sub: {
-    color: "#fff",
+    color: "#e5ffe0",
   },
 });
